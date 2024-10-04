@@ -1,0 +1,99 @@
+.trending-wrapper {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.trending-item {
+  min-width: 240px;
+  height: 140px;
+  margin: 0 1rem;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.trending-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.trending-container {
+  white-space: nowrap;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.trending-info-container {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.trending-info-top {
+  display: flex;
+}
+
+.trending-info {
+  padding: 1rem;
+}
+
+.bookmark {
+  background-color: var(--color--primary-dark-blue);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.bookmark-img {
+  opacity: 1;
+}
+
+.bookmark:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.trending-info-text {
+  margin-right: 0.5rem;
+  opacity: 0.75;
+}
+
+.trending-info img {
+  margin-right: 0.375rem;
+  height: 0.75rem;
+  margin-bottom: 1px;
+}
+
+.trending-info-text {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+
+.trending-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}

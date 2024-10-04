@@ -1,4 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #242424;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color--primary-dark-blue);
+  color: var(--color--primary-white);
+
+  --color--primary-red: #fc4747;
+  --color--primary-dark-blue: #10141e;
+  --color--primary-blue: #161d2f;
+  --color--primary-gray-blue: #5a698f;
+  --color--primary-white: #ffffff;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
